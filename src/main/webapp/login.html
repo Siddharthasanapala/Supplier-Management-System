@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(5, 30, 255, 0.1);
+}
+
+.container {
+    background-color: rgba(130, 95, 255, 0.2);
+    border: 3px solid navy;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+a {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid navy;
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: red;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <form action="loginserv" method="get">
+        <table align="center">
+            <tr>
+                <td>Enter Roll number:</td>
+                <td><input type="text" name="rollnum" required></td>
+            </tr>
+            <tr>
+                <td>Enter Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr><td colspan="2"></tr>
+            <tr><td colspan="2"></tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+        <br>
+		<br>
+        If you haven't registered yet! <a href="Register.jsp">Get Registered</a>
+    </form>
+</div>
+</body>
+</html>
